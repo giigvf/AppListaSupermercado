@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppListaSupermercado.View.FormularioCadastro">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Adicionar produto:"
+                HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="txt_produto"
+               VerticalOptions="CenterAndExpand"/>
+
+            
+            <Label Text="Quantidade:"
+                HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="txt_quantidade"
+                VerticalOptions="CenterAndExpand"/>
+
+            
+            <Label Text="Preço:"
+                HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="txt_preco"
+                VerticalOptions="CenterAndExpand"/>
+            
+            
+            <Button Text="Adicionar à lista" Clicked="Button_Clicked"/>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

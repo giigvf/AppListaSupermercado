@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppListaSupermercado.View.ListaProdutos">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Sua útima lista de mercado: " 
+                HorizontalOptions="CenterAndExpand" />
+
+             <Grid ColumnDefinitions="*, *"
+                  RowDefinitions="*, *, *, *, *">
+                 
+                <Label Text="Produtos" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Qualtidade" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Valor pago" Grid.Row="0" Grid.Column="2"/>
+
+            </Grid>
+            
+            <Button Text="Calcular total" Clicked="Button_Clicked_1"
+                HorizontalOptions="CenterAndExpand"/>
+            
+            <Button Text="Criar Nova Lista" Clicked="Button_Clicked"
+                HorizontalOptions="CenterAndExpand"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
